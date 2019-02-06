@@ -1,0 +1,16 @@
+{
+  "title": "Week notes",
+  "url": "https://notes.jonheslop.com/",
+  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "feed": {
+    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "url": "https://notes.jonheslop.com/feed/feed.xml",
+    "id": "https://notes.jonheslop.com/"
+  },
+  "author": {
+    "name": "Jon Heslop",
+    "email": "jon@jonheslop.com"
+  }
+}

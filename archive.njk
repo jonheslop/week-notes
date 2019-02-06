@@ -1,0 +1,12 @@
+---
+layout: layouts/home.njk
+tags:
+  - nav
+navtitle: Archive
+permalink: /posts/
+---
+
+<h1 class="f2 f1-m f-subheadline-l lh-title mt0 measure-narrow mt1 pt4 mb4 mb5-ns bt bw1 b--highlight">Archive</h1>
+
+{% set postslist = collections.posts %}
+{% include "postslist.njk" %}
