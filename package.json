@@ -7,9 +7,9 @@
   "homepage": "https://github.com/jonheslop/week-notes#readme",
   "main": "index.html",
   "scripts": {
-    "watch": "postcss style.css -o css/style.min.css -w",
-    "start": "postcss style.css -o css/style.min.css && serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm eleventy",
+    "watch": "npm eleventy --watch",
+    "debug": "DEBUG=* npm eleventy"
   },
   "repository": {
     "type": "git",
@@ -23,10 +23,13 @@
   "bugs": {
     "url": "https://github.com/jonheslop/week-notes/issues"
   },
-  "dependencies": {
-    "serve": "^10.1.1"
-  },
   "devDependencies": {
+    "@11ty/eleventy": "^0.7.1",
+    "@11ty/eleventy-plugin-rss": "^1.0.3",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.0",
+    "luxon": "^1.0.0",
+    "markdown-it": "^8.4.1",
+    "markdown-it-anchor": "^5.0.2",
     "autoprefixer": "^9.4.7",
     "cssnano": "^4.1.8",
     "postcss": "^7.0.14",

@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-page
+---
+<article class="markdown">
+  <header>
+    <span class="f5 f4-ns fw5 i accent">
+      Page
+      <span class="fr">{{ url }} thing</span>
+    </span>
+    <h1 class="f2 f1-m f-subheadline-l lh-title mt0 measure-narrow mt1 pt4 mb4 mb5-ns bt bw1 b--highlight">{{ title }}</h1>
+  </header>
+
+  {{ content | safe }}
+</article>
+
+<p><a href="{{ '/' | url }}">← Home</a></p>

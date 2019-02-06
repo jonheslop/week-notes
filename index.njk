@@ -1,0 +1,15 @@
+---
+layout: layouts/home.njk
+tags:
+  - nav
+navtitle: Home
+---
+
+<h1 class="f2 f1-m f-subheadline-l lh-title mt0 measure-narrow mt1 pt4 mb4 mb5-ns bt bw1 b--highlight">Jon Heslop’s week notes</h1>
+
+<h2 class="f4 lh-title ttu tracked">Latest Posts</h2>
+
+{% set postslist = collections.posts | head(-3) %}
+{% include "postslist.njk" %}
+
+<p class="f4 f3-ns lh-copy">More posts can be found in <a class="link accent" href="{{ '/posts/' | url }}">the archive</a>.</p>
