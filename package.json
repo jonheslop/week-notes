@@ -5,11 +5,10 @@
   "author": "Jon Heslop <jon@jonheslop.com>",
   "license": "MIT",
   "homepage": "https://github.com/jonheslop/week-notes#readme",
-  "main": "index.html",
   "scripts": {
-    "build": "npm eleventy",
-    "watch": "npm eleventy --watch",
-    "debug": "DEBUG=* npm eleventy"
+    "now-build": "npx eleventy",
+    "dev": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
     "type": "git",
