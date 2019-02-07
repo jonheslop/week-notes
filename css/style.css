@@ -1,0 +1,89 @@
+/* Media queries */
+@custom-media --not-small screen and (min-width: 30em);
+@custom-media --large screen and (min-width: 60em);
+
+:root {
+  /* Base colour scheme */
+  --background: #f1f1f1; /* Anti-flash white */
+  --highlight: #ffffff; /* White */
+  --text: #111111; /* Licorice */
+  --accent: #e7040f; /* Ku crimson */
+  --accent-light: #eb313a; /* Deep carmine pink */
+  --accent-dark: #be040d; /* Venetian red */
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    /* Dark mode colour scheme */
+    --background: #111111; /* Licorice */
+    --highlight: #ffffff; /* White */
+    --text: #f1f1f1; /* Anti-flash white */
+    --accent: #ffb700; /* Gold */
+    --accent-light: #ffc42e; /* Sunglow */
+    --accent-dark: #d19600; /* Vivid amber */
+  }
+
+  img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
+  }
+  img:hover {
+    opacity: 1;
+  }
+}
+
+/* Generate Tachyons like class names for all my custom colours */
+@each $color in background, highlight, text, accent, accent-light, accent-dark {
+  .$(color), .hover-$(color) {
+    color: var(--$(color))
+  }
+
+  .bg-$(color) {
+    background-color: var(--$(color))
+  }
+
+  .b--$(color) {
+    border-color: var(--$(color))
+  }
+}
+
+.markdown p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  max-width: 30em;
+
+  @media (--not-small) {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* bl bw4 bw5-ns b--highlight ma0 nl4-ns pl3 pl4-ns */
+.markdown blockquote {
+  margin: 0;
+  padding-left: 1rem;
+  border-left: 1rem solid var(--highlight);
+
+  p {
+    font-size: 1.25rem;
+    max-width: 20em;
+    line-height: 1.5;
+  }
+
+  @media (--not-small) {
+    margin: 0 0 0 -2rem;
+    padding-left: 2rem;
+    border-width: 2rem;
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (--large) {
+    p {
+      font-size: 2.25rem;
+      line-height: 1.5;
+    }
+  }
+}

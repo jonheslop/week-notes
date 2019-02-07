@@ -7,14 +7,14 @@
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
     <link rel="stylesheet" href="https://use.typekit.net/kri1xxu.css">
-    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/style.min.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
   </head>
   <body class="tk-marco ma0 pa4 text bg-background">
     <header class="flex flex-wrap fixed-l ml0 ml5-m ml0-l mb4" role="banner">
       <h1 class="ma0">
         <a href="{{ '/' | url }}">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 682.17 682.18" class="dib db-l w3 h3 br-100 bg-highlight" title="{{ metadata.title }}"><path fill="var(--accent)" d="M0 0v682.17h682.17V0zm209.68 444.37s0 18.68-18.33 41.45c-21.23 26.36-26 28.59-26 28.59l-28-30.35 19.11-18.09s6.57-7.45 6.57-14.6V273.78l46.72-9.34zm311.48-60.08l-46.73 9.34v-70.08l-54.57 10.91v70.08l-46.73 9.35V276.05l-81.78 16.36v25.71l46.77-9.34v42.04l-46.77 9.3v70.08l-46.66 9.35-.06-182.22 175.27-35v70.09l54.57-10.91v-70.1l46.73-9.34z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 682.17 682.18" class="dib db-l w3 h3 br-100 bg-highlight" title="{{ metadata.title }}"><path class="accent" fill="currentColor" d="M0 0v682.17h682.17V0zm209.68 444.37s0 18.68-18.33 41.45c-21.23 26.36-26 28.59-26 28.59l-28-30.35 19.11-18.09s6.57-7.45 6.57-14.6V273.78l46.72-9.34zm311.48-60.08l-46.73 9.34v-70.08l-54.57 10.91v70.08l-46.73 9.35V276.05l-81.78 16.36v25.71l46.77-9.34v42.04l-46.77 9.3v70.08l-46.66 9.35-.06-182.22 175.27-35v70.09l54.57-10.91v-70.1l46.73-9.34z"/></svg>
         </a>
       </h1>
       <nav role="navigation" class="dib db-l ml-auto ml0-l w-100-l">
