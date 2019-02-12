@@ -6,9 +6,9 @@
 
 :root {
   /* Base colour scheme */
-  --background: #f1f1f1; /* Anti-flash white */
+  --background: #f5f6f7; /* White smoke */
   --highlight: #ffffff; /* White */
-  --text: #111111; /* Licorice */
+  --text: #121110; /* Onyx */
   --accent: #e7040f; /* Ku crimson */
   --accent-light: #eb313a; /* Deep carmine pink */
   --accent-dark: #be040d; /* Venetian red */
@@ -28,9 +28,9 @@
 @media screen and (prefers-color-scheme: dark) {
   :root {
     /* Dark mode colour scheme */
-    --background: #111111; /* Licorice */
+    --background: #121110; /* Onyx */
     --highlight: #ffffff; /* White */
-    --text: #f1f1f1; /* Anti-flash white */
+    --text: #f5f6f7; /* White smoke */
     --accent: #ffb700; /* Gold */
     --accent-light: #ffc42e; /* Sunglow */
     --accent-dark: #d19600; /* Vivid amber */
@@ -47,7 +47,7 @@
 
 /* Generate Tachyons like class names for all my custom colours */
 @each $color in background, highlight, text, accent, accent-light, accent-dark {
-  .$(color), .hover-$(color) {
+  .$(color), .hover-$(color):hover {
     color: var(--$(color))
   }
 
@@ -58,6 +58,17 @@
   .b--$(color) {
     border-color: var(--$(color))
   }
+}
+
+.link:focus {
+  background-color: var(--text);
+  color: var(--highlight);
+  outline-offset: 0;
+  outline: .125rem solid var(--text);
+}
+
+.logo-focus:focus {
+  color: var(--text);
 }
 
 .markdown p {
