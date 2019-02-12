@@ -1,4 +1,4 @@
-<ol reversed class="list ma0 pa0" style="counter-reset: start-from {{ postslist.length + 1 }}">
+<ol reversed class="list ma0 mb6 pa0">
 {% for post in postslist | reverse %}
   <li class="lh-copy mb4 bt bw1 b--highlight{% if post.url == url %} postlist-item-active{% endif %}">
     <a href="{{ post.url | url }}" class="link accent hover-accent-dark f3 f2-l mr3">{% if post.data.title %}{{ post.data.title | widont | safe }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
