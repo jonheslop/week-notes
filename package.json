@@ -6,7 +6,7 @@
   "license": "MIT",
   "homepage": "https://github.com/jonheslop/week-notes#readme",
   "scripts": {
-    "now-build": "npx eleventy",
+    "now-build": "postcss css/style.pcss -o css/style.min.css && npx eleventy",
     "dev": "npx eleventy --serve",
     "css": "postcss css/style.pcss -o css/style.min.css -w",
     "debug": "DEBUG=* npx eleventy"

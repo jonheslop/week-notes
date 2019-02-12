@@ -57,5 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# compiled css
+css/style.min.css
+
 # eleventy build output
 _site/
