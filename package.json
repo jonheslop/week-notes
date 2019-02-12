@@ -8,7 +8,7 @@
   "scripts": {
     "now-build": "npx eleventy",
     "dev": "npx eleventy --serve",
-    "css": "postcss css/style.css -o css/style.min.css -w",
+    "css": "postcss css/style.pcss -o css/style.min.css -w",
     "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
@@ -35,6 +35,9 @@
     "postcss": "^7.0.14",
     "postcss-cli": "^6.1.1",
     "postcss-cssnext": "^3.1.0",
-    "postcss-each": "^0.10.0"
+    "postcss-each": "^0.10.0",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.1.1",
+    "tachyons": "^4.10.0"
   }
 }
