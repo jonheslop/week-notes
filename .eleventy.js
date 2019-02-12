@@ -32,6 +32,10 @@ module.exports = eleventyConfig => {
     return array.slice(0, n);
   });
 
+  eleventyConfig.addFilter('widont', string => {
+    return string.replace(/\s([^\s<]+)\s*$/,'&nbsp;$1')
+  });
+
   eleventyConfig.addCollection('tagList', require('./_11ty/getTagList'));
 
   eleventyConfig.addPassthroughCopy('img');
