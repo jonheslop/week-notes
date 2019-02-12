@@ -3,14 +3,6 @@
   <li class="lh-copy mb4 bt bw1 b--highlight{% if post.url == url %} postlist-item-active{% endif %}">
     <a href="{{ post.url | url }}" class="link accent f3 f2-l mr3">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
     <time class="f4 f3-l i fr" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-    {% for tag in post.data.tags %}
-    <div>
-      {%- if tag != "posts" -%}
-      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-      <a href="{{ tagUrl | url }}" class="f4 link accent">{{ tag }}</a>
-      {%- endif -%}
-    </div>
-    {% endfor %}
   </li>
 {% endfor %}
 </ol>
