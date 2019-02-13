@@ -1,5 +1,5 @@
 ---
-title: Jumping on the week notes bandwagon.
+title: Sign me up to the week notes brigade.
 description: This is a post on My Blog about agile frameworks.
 date: 2019-02-13
 layout: layouts/post.njk
