@@ -1,5 +1,5 @@
 ---
-title: Sign me up to the week notes brigade.
+title: Sign me up to the week notes brigade
 description: Let’s give this a try then.
 date: 2019-02-13
 layout: layouts/post.njk
