@@ -40,7 +40,7 @@
       </h1>
       <nav role="navigation" class="dib db-l ml-auto ml0-l w-100-l">
         <ul class="list pa0 dib mt4-l">
-          {%- for nav in collections.nav -%}
+          {%- for nav in collections.nav | reverse -%}
           <li class="dib db-l f5 f4-ns lh-title lh-copy-l">
             <a href="{{ nav.url | url }}" class="link {{ "accent hover-accent-light" if nav.url == page.url else "text hover-accent" }} pv2 pv1-l ph2 ph3-ns ph0-l">
               {{ nav.data.navtitle }}
