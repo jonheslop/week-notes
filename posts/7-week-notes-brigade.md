@@ -1,6 +1,6 @@
 ---
 title: Sign me up to the week notes brigade.
-description: This is a post on My Blog about agile frameworks.
+description: Let’s give this a try then.
 date: 2019-02-13
 layout: layouts/post.njk
 ---
