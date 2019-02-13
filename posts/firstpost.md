@@ -1,17 +1,16 @@
 ---
-title: This is my first post.
+title: Jumping on the week notes bandwagon.
 description: This is a post on My Blog about agile frameworks.
-date: 2019-01-19
-tags:
-  - another-tag
+date: 2019-02-13
 layout: layouts/post.njk
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+As uncomfortable as it makes me feel, I am going to try and give this week notes thing a try. I’d like to get better at communicating what I do and I think the discipline will be good for me. Hopefully it’ll serve as some sort of coherent record of what I have been doing.
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+So this is it, a static site powered by [Eleventy]. It’s based on the [Eleventy base blog] but styled with [Tachyons]. It rebuilds and deploys automatically when changes are pushed to [Github], using [Now] by [Zeit], which makes it effortless.
 
-## Section Header
-
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
-
-> I gave it a cold? I gave it a virus. A computer virus. God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs.
+[Eleventy]: https://www.11ty.io
+[Eleventy base blog]: https://github.com/11ty/eleventy-base-blog
+[Tachyons]: http://tachyons.io/
+[Github]: https://github.com/jonheslop/week-notes
+[Now]: https://zeit.co/now
+[Zeit]: https://zeit.co/
