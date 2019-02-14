@@ -8,10 +8,13 @@
   /* Base colour scheme */
   --background: #f5f6f7; /* White smoke */
   --highlight: #ffffff; /* White */
-  --text: #121110; /* Onyx */
+  --text: #121110; /* Licorice */
   --accent: #e7040f; /* Ku crimson */
   --accent-light: #eb313a; /* Deep carmine pink */
   --accent-dark: #be040d; /* Venetian red */
+  --secondary: #0a679a; /* Sea blue */
+  --secondary-light: #3682ac; /* Steel blue */
+  --secondary-dark: #084b71; /* Dark cerulean */
 
   /* Tachyons spacing scale */
   /* http://tachyons.io/docs/layout/spacing */
@@ -28,12 +31,15 @@
 @media screen and (prefers-color-scheme: dark) {
   :root {
     /* Dark mode colour scheme */
-    --background: #121110; /* Onyx */
+    --background: #121110; /* Licorice */
     --highlight: #ffffff; /* White */
     --text: #f5f6f7; /* White smoke */
     --accent: #ffb700; /* Gold */
     --accent-light: #ffc42e; /* Sunglow */
     --accent-dark: #d19600; /* Vivid amber */
+    --secondary: #14a5cc; /* Pacific blue */
+    --secondary-light: #3eb5d5; /* Maximum blue */
+    --secondary-dark: #0f7995; /* Metallic seaweed */
   }
 
   img {
@@ -46,7 +52,7 @@
 }
 
 /* Generate Tachyons like class names for all my custom colours */
-@each $color in background, highlight, text, accent, accent-light, accent-dark {
+@each $color in background, highlight, text, accent, accent-light, accent-dark, secondary {
   .$(color), .hover-$(color):hover {
     color: var(--$(color))
   }
