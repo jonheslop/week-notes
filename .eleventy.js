@@ -36,7 +36,7 @@ module.exports = eleventyConfig => {
     return string.replace(/\s([^\s<]+)\s*$/,'&nbsp;$1')
   });
 
-  eleventyConfig.addCollection('tagList', require('./_11ty/getTagList'));
+  eleventyConfig.addCollection('tagList', require('./_11ty/get-tag-list'));
 
   eleventyConfig.addPassthroughCopy('img');
   eleventyConfig.addPassthroughCopy('css');

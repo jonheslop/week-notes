@@ -9,7 +9,8 @@
     "now-build": "postcss css/style.pcss -o css/style.min.css && npx eleventy",
     "dev": "npx eleventy --serve",
     "css": "postcss css/style.pcss -o css/style.min.css -w",
-    "debug": "DEBUG=* npx eleventy"
+    "debug": "DEBUG=* npx eleventy", 
+    "lint": "xo"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,9 @@
   ],
   "bugs": {
     "url": "https://github.com/jonheslop/week-notes/issues"
+  },
+  "xo": {
+    "space": true
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.7.1",
@@ -38,6 +42,7 @@
     "postcss-each": "^0.10.0",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.1.1",
-    "tachyons": "^4.10.0"
+    "tachyons": "^4.10.0",
+    "xo": "^0.24.0"
   }
 }
