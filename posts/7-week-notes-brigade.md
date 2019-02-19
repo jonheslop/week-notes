@@ -2,7 +2,7 @@
 title: Sign me up to the week notes brigade
 description: Let’s give this a try then.
 date: 2019-02-13
-tag: week-notes
+tag: notes
 layout: layouts/post.njk
 ---
 As uncomfortable as it makes me feel, I am going to try and give this week notes thing a try. I’d like to get better at communicating what I do and I think the discipline will be good for me. Hopefully it’ll serve as some sort of coherent record of what I have been doing.
