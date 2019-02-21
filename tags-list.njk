@@ -2,9 +2,13 @@
 permalink: /tags/
 layout: layouts/home.njk
 ---
-<h1>Tags</h1>
+<h1 class="f2 f1-m f-subheadline-l lh-title mt0 measure-narrow pt4 mb4 mb5-ns bt bw1 b--highlight">Tags</h1>
 
+<ol class="list ma0 mb6 pa0">
 {% for tag in collections.tagList %}
-  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-  <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+  <li class="lh-copy bt bw1 b--highlight{% if post.url == url %} postlist-item-active{% endif %}">
+    {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+    <a href="{{ tagUrl | url }}" class="db link accent hover-secondary f3 f2-l mr3 pb4">{{ tag }}</a>
+  </li>
 {% endfor %}
+</ol>
