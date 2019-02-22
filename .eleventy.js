@@ -58,7 +58,7 @@ module.exports = eleventyConfig => {
   markdownIt.renderer.rules.image = tokens => {
     const src = tokens[0].attrs[tokens[0].attrIndex('src')][1];
     const alt = tokens[0].attrs[tokens[0].attrIndex('alt')][1] || tokens[0].content;
-    return `<figure class="mv4 mr0 ml0 mr6-l pa0 w-70-l ba bw4 bw5-ns b--highlight border-box bg-highlight">
+    return `<figure class="mv4 mr0 ml0 mr6-l nl4-ns pa0 w-70-l ba bw4 bw5-ns b--highlight border-box bg-highlight">
       <img class="db" src="${src}" alt="${alt}"/>
     </figure>`
   };

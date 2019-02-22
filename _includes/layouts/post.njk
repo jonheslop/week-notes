@@ -11,7 +11,7 @@ templateClass: tmpl-post
 
   {% if image %}
     {% set image_path = '/img/' + image %}
-    <figure class="mv4 mr0 ml0 mr6-l pa0 w-70-l ba bw4 bw5-ns b--highlight border-box bg-highlight">
+    <figure class="mv4 mr0 ml0 mr6-l nl4-ns pa0 w-70-l ba bw4 bw5-ns b--highlight border-box bg-highlight">
       <img class="db" src="{{ image_path | url }}" alt="{{ imageCaption }}" />
     </figure>
   {% endif %}
