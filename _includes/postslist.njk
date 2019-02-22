@@ -3,7 +3,7 @@
   <li class="lh-copy bt bw1 b--highlight{% if post.url == url %} postlist-item-active{% endif %}">
     <a href="{{ post.url | url }}" class="db link accent hover-secondary f3 f2-l mr3 pb4">
       {% if post.data.title %}{{ post.data.title | widont | safe }}{% else %}<code>{{ post.url }}</code>{% endif %}
-      <time class="f4 f3-l lh-title mt3 i fr" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      <time class="f5 f4-m f3-l lh-title mt2 mt3-ns i fr" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
     </a>
   </li>
 {% endfor %}
