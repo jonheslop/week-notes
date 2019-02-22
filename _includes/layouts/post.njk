@@ -6,7 +6,7 @@ templateClass: tmpl-post
   <header class="bt bw1 b--highlight">
     <time class="dib mv1 mb0-ns lh-title f5 f4-ns fw5 i accent" datetime="{{ date | htmlDateString }}">Week {{ date | readableWeek }}</time>
     <time class="dib mv1 mb0-ns lh-title f5 f4-ns fw5 i accent fr" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
-    <h1 class="f2 f1-m f-subheadline-l lh-title mt0 measure-narrow pt1 mb4 mb5-ns">{{ title | widont | safe }}</h1>
+    <h1 class="f2 f1-m f-subheadline-l i lh-title mt0 measure-narrow pt1 mb4 mb5-ns">{{ title | widont | safe }}</h1>
   </header>
 
   {{ content | safe }}
