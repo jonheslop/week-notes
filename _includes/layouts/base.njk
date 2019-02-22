@@ -14,13 +14,14 @@
     <meta property="og:title" content="{{ renderData.title or title or metadata.title }}"/>
     <meta property="og:description" content="{{ renderData.description or description or metadata.description }}"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="{{ '/img/jfh-og.gif' | url }}"/>
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:image" content="/img/{{ image or 'jfh-og.gif' | url }}"/>
+    <meta name="twitter:card" content="{{ "summary_large_image" if image else "summary" }}" />
     <meta name="twitter:site" content="@jonheslop"/>
     <meta name="twitter:creator" content="@jonheslop"/>
     <meta name="twitter:title" content="{{ renderData.title or title or metadata.title }}" />
     <meta name="twitter:description" content="{{ renderData.description or description or metadata.description }}" />
-
+    <meta name="twitter:image" content="/img/{{ image or 'jfh-og.gif' | url }}" />
+    
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/img/jfh-16.gif' | url }}"/>
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/img/jfh-32.gif' | url }}"/>
     <link rel="icon" type="image/png" sizes="96x96" href="{{ '/img/jfh-96.gif' | url }}"/>
