@@ -7,6 +7,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.setDataDeepMerge(true);
+  eleventyConfig.setUseGitIgnore(false);
 
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
 
@@ -42,14 +43,14 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy('css');
 
   /* Markdown Plugins */
-  let markdownIt = require('markdown-it')({
+  const markdownIt = require('markdown-it')({
     html: true,
     breaks: true,
     linkify: true,
     typographer: true
   });
-  let markdownItAnchor = require('markdown-it-anchor');
-  let opts = {
+  const markdownItAnchor = require('markdown-it-anchor');
+  const opts = {
     permalink: true,
     permalinkClass: 'link accent',
     permalinkSymbol: '#'
