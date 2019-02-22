@@ -9,6 +9,12 @@ templateClass: tmpl-post
     <h1 class="f2 f1-m f-subheadline-l i lh-title mt0 measure-narrow pt1 mb4 mb5-ns">{{ title | widont | safe }}</h1>
   </header>
 
+  {% if image %}
+    {% set image_path = '/img/' + image %}
+    <figure class="mv4 mr0 ml0 mr6-l pa0 w-70-l ba bw4 bw5-ns b--highlight border-box bg-highlight">
+      <img class="db" src="{{ image_path | url }}" alt="{{ imageCaption }}" />
+    </figure>
+  {% endif %}
   {{ content | safe }}
 </article>
 

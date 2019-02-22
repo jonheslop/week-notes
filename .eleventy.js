@@ -55,8 +55,13 @@ module.exports = eleventyConfig => {
     permalinkSymbol: '#'
   };
 
-  // markdownIt.renderer.rules.paragraph_open = () => `<p class="f4 f3-ns lh-copy measure">`;
-  // markdownIt.renderer.rules.blockquote_open = () => `<blockquote class="bl bw4 bw5-ns b--highlight ma0 nl4-ns pl3 pl4-ns">`;
+  markdownIt.renderer.rules.image = tokens => {
+    const src = tokens[0].attrs[tokens[0].attrIndex('src')][1];
+    const alt = tokens[0].attrs[tokens[0].attrIndex('alt')][1] || tokens[0].content;
+    return `<figure class="mv4 mr0 ml0 mr6-l pa0 w-70-l ba bw4 bw5-ns b--highlight border-box bg-highlight">
+      <img class="db" src="${src}" alt="${alt}"/>
+    </figure>`
+  };
 
   eleventyConfig.setLibrary('md', markdownIt
     .use(markdownItAnchor, opts)
