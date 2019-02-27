@@ -1,0 +1,14 @@
+/* Generate Tachyons like class names for all my custom colours */
+@each $color in background, highlight, text, accent, accent-light, accent-dark, secondary {
+  .$(color), .hover-$(color):hover {
+    color: var(--$(color))
+  }
+
+  .bg-$(color) {
+    background-color: var(--$(color))
+  }
+
+  .b--$(color) {
+    border-color: var(--$(color))
+  }
+}

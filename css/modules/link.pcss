@@ -1,0 +1,14 @@
+.link,
+[class=^"hover"] {
+  &:focus {
+    background-color: var(--text);
+    color: var(--highlight);
+    outline-offset: 0;
+    outline: .25rem solid var(--text);
+  }
+
+  &:active,
+  [class=^"hover"] {
+    color: var(--highlight);
+  }
+}

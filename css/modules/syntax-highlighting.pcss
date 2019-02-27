@@ -1,0 +1,101 @@
+:root {
+  --code-background: #1c2828; /* Black */
+  --code: #bed6d5; /* Columbia blue */
+  --tertiary: #0cd1c7; /* Robin egg blue */
+	--yellow: #e8be04; /* Vivid yellow */
+}
+
+code[class*="language-"], pre[class*="language-"] {
+	font-family: 'iA Writer Mono V',Consolas,monaco,monospace;
+	font-size: .875rem;
+	line-height: 1.375;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	tab-size: 2;
+	hyphens: none;
+	background: var(--code-background);
+	color: var(--code);
+	border-radius: .25rem;
+
+	@media (--large) {
+		max-width: calc(70% - 2rem);
+	}
+}
+pre[class*="language-"] {
+	padding: 1rem .5rem;
+	margin: 1rem 0;
+	overflow: auto;
+}
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+}
+.token.comment, .token.prolog, .token.doctype, .token.cdata {
+	opacity: .5;
+	font-style: italic;
+}
+.token.punctuation {
+	color: var(--code);
+}
+.token.namespace {
+	opacity: .7;
+}
+.token.operator, .token.boolean, .token.number {
+	color: var(--yellow);
+}
+.token.property {
+	color: var(--accent-light);
+}
+.token.tag {
+	color: var(--secondary-light);
+}
+.token.string {
+	color: var(--tertiary);
+}
+.token.function {
+	color: var(--accent-light);
+}
+.token.selector {
+	color: var(--tertiary);
+}
+.token.attr-name {
+	color: var(--accent-dark);
+}
+.token.entity, .token.url, .language-css .token.string, .style .token.string {
+	color: var(--secondary-light);
+}
+.token.attr-value, .token.keyword, .token.control, .token.directive, .token.unit {
+	color: var(--yellow);
+}
+.token.statement, .token.regex, .token.atrule {
+	color: var(--secondary-light);
+}
+.token.placeholder, .token.variable {
+	color: var(--secondary-light);
+}
+.token.deleted {
+	text-decoration: line-through;
+}
+.token.inserted {
+	border-bottom: 1px dotted var(--text);
+	text-decoration: none;
+}
+.token.italic {
+	font-style: italic;
+}
+.token.important, .token.bold {
+	font-weight: bold;
+}
+.token.important {
+	color: var(--secondary-light);
+}
+.token.entity {
+	cursor: help;
+}
+pre > code.highlight {
+	outline: 0.4em solid var(--secondary-light);
+	outline-offset: .4em;
+}

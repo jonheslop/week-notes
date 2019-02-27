@@ -1,0 +1,63 @@
+.markdown {
+  a {
+    transition: color .15s ease-in;
+
+    &:link {
+      color: var(--accent);
+    }
+
+    &:visited {
+      color: var(--visited);
+    }
+
+    &:hover {
+      color: var(--secondary)
+    }
+
+    &:focus {
+      background-color: var(--text);
+      color: var(--highlight);
+      outline-offset: 0;
+      outline: .25rem solid var(--text);
+    }
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    max-width: 30em;
+
+    @media (--not-small) {
+      font-size: 1.5rem;
+    }
+  }
+
+  blockquote {
+    margin: 0;
+    padding-left: var(--spacing-medium);
+    border-left: 1rem solid var(--highlight);
+
+    p {
+      font-size: 1.25rem;
+      max-width: 20em;
+      line-height: 1.5;
+    }
+
+    @media (--not-small) {
+      margin-left: calc(-1 * var(--spacing-large));
+      padding-left: var(--spacing-large);
+      border-width: 2rem;
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (--large) {
+      p {
+        font-size: 2.25rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}
