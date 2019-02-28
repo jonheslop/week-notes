@@ -62,3 +62,6 @@ css/style.min.css
 
 # eleventy build output
 _site/
+
+# image processing
+batch

@@ -9,7 +9,7 @@
     "now-build": "postcss css/style.pcss -o css/style.min.css && npx eleventy",
     "dev": "npx eleventy --serve",
     "css": "postcss css/style.pcss -o css/style.min.css -w",
-    "debug": "DEBUG=* npx eleventy", 
+    "debug": "DEBUG=* npx eleventy",
     "lint": "xo"
   },
   "repository": {
@@ -33,6 +33,9 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.0",
     "autoprefixer": "^9.4.7",
     "cssnano": "^4.1.8",
+    "imagemin": "^6.1.0",
+    "imagemin-gm": "^2.0.1",
+    "imagemin-mozjpeg": "^8.0.0",
     "luxon": "^1.0.0",
     "markdown-it": "^8.4.1",
     "markdown-it-anchor": "^5.0.2",
