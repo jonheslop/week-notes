@@ -9,7 +9,7 @@
     "now-build": "postcss css/style.pcss -o css/style.min.css && npx eleventy",
     "dev": "npx eleventy --serve",
     "css": "postcss css/style.pcss -o css/style.min.css -w",
-    "debug": "DEBUG=* npx eleventy", 
+    "debug": "DEBUG=* npx eleventy",
     "lint": "xo"
   },
   "repository": {
@@ -29,20 +29,20 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.7.1",
-    "@11ty/eleventy-plugin-rss": "^1.0.3",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.0",
-    "autoprefixer": "^9.4.7",
-    "cssnano": "^4.1.8",
-    "luxon": "^1.0.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.6",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
+    "autoprefixer": "^9.6.0",
+    "cssnano": "^4.1.10",
+    "luxon": "^1.16.0",
     "markdown-it": "^8.4.1",
-    "markdown-it-anchor": "^5.0.2",
-    "postcss": "^7.0.14",
-    "postcss-cli": "^6.1.1",
+    "markdown-it-anchor": "^5.2.4",
+    "postcss": "^7.0.17",
+    "postcss-cli": "^6.1.2",
     "postcss-cssnext": "^3.1.0",
     "postcss-each": "^0.10.0",
     "postcss-import": "^12.0.1",
-    "postcss-nested": "^4.1.1",
-    "tachyons": "^4.10.0",
+    "postcss-nested": "^4.1.2",
+    "tachyons": "^4.11.1",
     "xo": "^0.24.0"
   }
 }
