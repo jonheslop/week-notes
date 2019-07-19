@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<article class="markdown">
+<article>
   <header class="bt bw1 b--highlight">
     <time class="dib mv1 mb0-ns lh-title f5 f4-ns fw5 i accent" datetime="{{ date | htmlDateString }}">Week {{ date | readableWeek }}</time>
     <time class="dib mv1 mb0-ns lh-title f5 f4-ns fw5 i accent fr" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
@@ -15,7 +15,9 @@ templateClass: tmpl-post
       <img class="db" src="{{ image_path | url }}" alt="{{ imageCaption }}" />
     </figure>
   {% endif %}
-  {{ content | safe }}
+  <div class="markdown">
+    {{ content | safe }}
+  </div>
 </article>
 
 <p class="f4 f3-ns lh-copy mt0 pt2 mb4 mb5-ns bt bw1 b--highlight">

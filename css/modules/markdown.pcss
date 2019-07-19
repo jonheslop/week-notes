@@ -22,7 +22,7 @@
     }
   }
 
-  p {
+  p, li {
     font-size: 1.25rem;
     line-height: 1.5;
     max-width: 30em;
@@ -48,13 +48,13 @@
       padding-left: var(--spacing-large);
       border-width: 2rem;
 
-      p {
+      p, li {
         font-size: 1.5rem;
       }
     }
 
     @media (--large) {
-      p {
+      p, li {
         font-size: 2.25rem;
         line-height: 1.5;
       }
@@ -67,5 +67,12 @@
     background: var(--highlight);
     padding: var(--spacing-extra-small) var(--spacing-small);
     border-radius: .125rem;
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin-top: var(--spacing-extra-large);
+    line-height: 1.25;
   }
 }
