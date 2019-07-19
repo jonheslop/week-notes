@@ -6,7 +6,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-For past year or so I’ve been actively trying to protect my online privacy by making decisions about what products I use, it started with switching to [Firefox] and ended up in my leaving Instagram.
+For past year or so I’ve been actively trying to protect my online privacy by making decisions about what products I use, it started with switching to [Firefox] and ended up in leaving Instagram.
 
 [Surveillance capitalism] is scary and I want to minimise my exposure to it. A couple of weeks back Maciej Cegłowski wrote [this brilliant essay](https://idlewords.com/2019/06/the_new_wilderness.htm) how we need to transform how we think about privacy by comparing it to how 100 years ago no one was interesting in protecting the environment.
 
