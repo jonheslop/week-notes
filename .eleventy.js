@@ -51,8 +51,8 @@ module.exports = eleventyConfig => {
   const markdownItAnchor = require('markdown-it-anchor');
   const opts = {
     permalink: true,
-    permalinkClass: 'link accent',
-    permalinkSymbol: '#'
+    permalinkClass: 'link accent anchor',
+    permalinkSymbol: '∞'
   };
 
   markdownIt.renderer.rules.image = tokens => {
