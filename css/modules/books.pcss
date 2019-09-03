@@ -1,0 +1,20 @@
+.book-grid {
+  @media (--not-small) {
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    grid-gap: 4rem;
+  }
+}
+
+.quote {
+  quotes: initial;
+
+  &:before {
+    content: open-quote;
+    margin-left: -.3rem;
+  }
+
+  &:after {
+    content: close-quote;
+  }
+}
