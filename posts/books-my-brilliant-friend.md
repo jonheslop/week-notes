@@ -1,5 +1,5 @@
 ---
-title: My Brilliant Friend 
+title: My Brilliant Friend
 author: Elena Ferrante
 date: 2019-05-05
 tags: books
