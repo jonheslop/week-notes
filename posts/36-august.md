@@ -1,25 +1,10 @@
 ---
-title: August notes
+title: August
 date: 2019-09-03
 tags:
   - notes
 layout: layouts/post.njk
 ---
-
-## Books:
-
-### *[Feminism for the 99%]*
-
-> “Far from celebrating women CEOs who occupy corner offices, we want to get rid of CEOs and corner offices.”
-
-
-### *[The uninhabitable Earth: life after warming]*
-
-> “…more than half of the carbon exhaled into the atmosphere by the burning of fossil fuels has been emitted in just the past three decades.”
-
-> “Half of the Great Barrier Reef has already died, methane is leaking from the Artic permafrost that may never freeze again, and the high-end estimates for what warming will mean for cereal crops suggest that just four degrees of warming could reduce yields by 50 percent. If this strikes you as tragic, which is should, consider that we have all the tools we need, today, to stop it all…”
-
-Really alarming. We’ve been well aware of climate change for 20 years and yet we’ve released more CO2 than the rest of human history within that time.
 
 ## Podcasts
 
@@ -35,24 +20,26 @@ I was spurred on by the release of [NetNewsWire 5]. So I’ve now got a small li
 
 So far I’m not subscribing to many feeds but this is the list so far:
 
-- https://adactio.com/articles/
-- https://adactio.com/journal/
-- https://alicebartlett.co.uk/
-- https://andy-bell.design
-- https://colly.com/journal
-- https://daringfireball.net/
-- https://www.gyford.com/phil/writing/
-- https://heydonworks.com/
-- https://interconnected.org/home/
-- https://blog.louisedowne.com/
-- https://natbuckley.co.uk
-- https://obyford.com/
-- https://russelldavies.typepad.com/planning/
-- http://shiflett.org/
-- https://sonniesedge.co.uk/
+<div class="columns">
 
-[Feminism for the 99%]: https://www.versobooks.com/books/2924-feminism-for-the-99
-[The uninhabitable Earth: life after warming]: https://www.worldcat.org/title/uninhabitable-earth-life-after-warming/oclc/1104345434&referer=brief_results
+- [adactio.com/articles/](https://adactio.com/articles/)
+- [adactio.com/journal/](https://adactio.com/journal/)
+- [alicebartlett.co.uk/](https://alicebartlett.co.uk/)
+- [andy-bell.design](https://andy-bell.design)
+- [colly.com/journal](https://colly.com/journal)
+- [daringfireball.net/](https://daringfireball.net/)
+- [gyford.com/phil/writing/](https://www.gyford.com/phil/writing/)
+- [heydonworks.com/](https://heydonworks.com/)
+- [interconnected.org/home/](https://interconnected.org/home/)
+- [blog.louisedowne.com/](https://blog.louisedowne.com/)
+- [natbuckley.co.uk](https://natbuckley.co.uk)
+- [obyford.com/](https://obyford.com/)
+- [russelldavies.typepad.com/planning/](https://russelldavies.typepad.com/planning/)
+- [shiflett.org/](http://shiflett.org/)
+- [sonniesedge.co.uk/](https://sonniesedge.co.uk/)
+
+</div>
+
 [Talking Politics]:https://www.talkingpoliticspodcast.com/
 [European Union before the EU]: https://www.talkingpoliticspodcast.com/blog/2019/182-talking-politics-guide-to-european-union-before-the-eu
 [The Euro]: https://www.talkingpoliticspodcast.com/blog/2019/178-talking-politics-guide-to-the-euro
