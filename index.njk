@@ -10,7 +10,7 @@ navtitle: Home
 
 <h2 class="f5 f4-l lh-title ttu tracked">Recently</h2>
 
-{% set postslist = collections.posts | head(-3) %}
+{% set postslist = collections.notes | head(-3) %}
 {% include "postslist.njk" %}
 
 <p class="f4 f3-ns lh-copy">Keep digging in <a class="link accent hover-secondary" href="{{ '/posts/' | url }}">the&nbsp;archive&nbsp;»</a></p>
