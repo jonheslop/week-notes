@@ -33,7 +33,7 @@ module.exports = eleventyConfig => {
   });
 
   eleventyConfig.addFilter('widont', string => {
-    return string.replace(/\s([^\s<]+)\s*$/,'&nbsp;$1')
+    return string.split(" ").length > 2 ? string.replace(/\s([^\s<]+)\s*$/,'&nbsp;$1') : string
   });
 
   eleventyConfig.addCollection('tagList', require('./_11ty/get-tag-list'));

@@ -21,19 +21,21 @@ permalink: /reading/
     {%- endset -%}
   {% endif %}
 
-  <article class="bt bw1 b--highlight pv4 book-grid">
-    <img class="db ba bw4 b--highlight mw4 mw-100-ns fl mr4 border-box" src="{{ image }}" alt="Book cover of {{ book.data.title }}" />
-    <div>
-      <h2 class="db f3 f2-ns fw4 ma0 lh-title measure-narrow">
-        {{ book.data.title | widont | safe }}
-      </h2>
-      <h3 class="mt2 ma0-ns fw4 f5 f4-ns lh-title">by {{ book.data.author }}</h3>
+  <article class="bt bw1 b--highlight pv4 cf">
+    <div class="book-grid">
+      <img class="db ba bw4 b--highlight mw4 mw-100-ns fl mr4 border-box" src="{{ image }}" alt="Book cover of {{ book.data.title }}" />
+      <div>
+        <h2 class="db f3 f2-ns fw4 ma0 lh-title measure-narrow">
+          {{ book.data.title | widont | safe }}
+        </h2>
+        <h3 class="mt2 ma0-ns fw4 f5 f4-ns lh-title">by {{ book.data.author }}</h3>
 
-      {% if book.data.quote %}
-      <blockquote class="i mt6 mt4-ns cf">
-        <p class="quote f5 measure ma0 pv2 pl3 bl bw4 b--highlight lh-copy">{{ book.data.quote }}</p>
-      </blockquote>
-      {% endif %}
+        {% if book.data.quote %}
+        <blockquote class="i mt5 mt4-ns cf">
+          <p class="quote f5 measure ma0 pv2 pl3 bl bw4 b--highlight lh-copy">{{ book.data.quote }}</p>
+        </blockquote>
+        {% endif %}
+      </div>
     </div>
   </article>
 {%- endfor -%}
