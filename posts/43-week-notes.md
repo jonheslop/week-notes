@@ -1,5 +1,6 @@
 ---
 title: Week 43
+bigTitle: false
 date: 2019-10-27
 tags:
   - notes

@@ -1,7 +1,8 @@
 ---
 title: Stubbing the Payment Request API for testing
+bigTitle: true
 date: 2019-07-02
-tags: 
+tags:
   - notes
 layout: layouts/post.njk
 ---

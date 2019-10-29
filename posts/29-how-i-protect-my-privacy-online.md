@@ -1,7 +1,8 @@
 ---
 title: How I protect my privacy online
+bigTitle: true
 date: 2019-07-19
-tags: 
+tags:
   - notes
 layout: layouts/post.njk
 ---

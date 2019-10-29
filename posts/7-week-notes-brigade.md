@@ -1,8 +1,9 @@
 ---
 title: Sign me up to the week notes brigade
+bigTitle: true
 description: Let’s give this a try then.
 date: 2019-02-13
-tags: 
+tags:
   - notes
 layout: layouts/post.njk
 ---

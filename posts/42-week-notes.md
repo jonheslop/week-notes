@@ -1,5 +1,6 @@
 ---
 title: Week 42
+bigTitle: false
 date: 2019-10-19
 tags:
   - notes

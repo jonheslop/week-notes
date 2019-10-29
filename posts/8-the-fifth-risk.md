@@ -1,8 +1,9 @@
 ---
 title: The Fifth Risk
+bigTitle: true
 description: Let’s give this a try then.
 date: 2019-02-19
-tags: 
+tags:
   - notes
 layout: layouts/post.njk
 ---
