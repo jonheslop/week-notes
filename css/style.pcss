@@ -11,3 +11,14 @@
 @import "./modules/syntax-highlighting.pcss";
 @import "./modules/books.pcss";
 @import "./modules/work.pcss";
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: [logo] 6rem [nav] 12rem [content] 1fr;
+  grid-gap: 4rem;
+  align-items: start;
+}
+
+footer {
+  grid-column: 3/5;
+}
