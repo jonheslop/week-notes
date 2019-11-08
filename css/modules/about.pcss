@@ -1,0 +1,17 @@
+.page-about {
+  position: relative;
+
+  &:before {
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background-image: url('/img/jon-heslop.jpg');
+    background-size: cover;
+    background-position: center 20%;
+    filter: opacity(.25) grayscale(100%);
+  }
+}
