@@ -8,7 +8,7 @@ navtitle: Reading
 permalink: /reading/
 ---
 
-<h1 class="f2 f1-ns i lh-title mt0 measure pt4 mb4 mb5-ns bt bw1 b--highlight">Books that I’ve read&nbsp;recently</h1>
+<h1 class="f2 f-subheadline-ns fw8 i lh-title mt0 measure pt4 mb4 mb5-ns bt bw1 b--highlight">Books that I’ve read&nbsp;recently</h1>
 
 <div reversed class="list ma0 mb6 pa0">
 {%- for book in collections.books | reverse -%}
@@ -26,10 +26,10 @@ permalink: /reading/
     <div class="{{ 'book-grid' if book.data.quote else 'book-grid-small' }}">
       <img class="db ba bw4 b--highlight mw4 {{ 'mw5-l' if book.data.quote else '' }} fl mr4 border-box" src="{{ image }}" alt="Book cover of {{ book.data.title }}" />
       <div>
-        <h2 class="db f3 f2-ns fw4 ma0 lh-title measure-narrow">
+        <h2 class="db f3 f2-ns fw5 ma0 lh-title measure-narrow">
           {{ book.data.title | widont | safe }}
         </h2>
-        <h3 class="mt2 ma0-ns fw4 f5 f4-ns lh-title">by {{ book.data.author }}</h3>
+        <h3 class="mt2 ma0-ns fw5 f5 f4-ns lh-title">by {{ book.data.author }}</h3>
 
         {% if book.data.quote %}
         {% set isShort = book.data.quote.length < 110 %}
