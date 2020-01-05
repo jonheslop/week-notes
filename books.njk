@@ -23,8 +23,8 @@ permalink: /reading/
   {% endif %}
 
   <article class="bt bw1 b--highlight pv4 cf">
-    <div class="book-grid">
-      <img class="db ba bw4 b--highlight mw4 mw5-l fl mr4 border-box" src="{{ image }}" alt="Book cover of {{ book.data.title }}" />
+    <div class="{{ 'book-grid' if book.data.quote else 'book-grid-small' }}">
+      <img class="db ba bw4 b--highlight mw4 {{ 'mw5-l' if book.data.quote else '' }} fl mr4 border-box" src="{{ image }}" alt="Book cover of {{ book.data.title }}" />
       <div>
         <h2 class="db f3 f2-ns fw4 ma0 lh-title measure-narrow">
           {{ book.data.title | widont | safe }}
