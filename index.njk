@@ -6,11 +6,9 @@ date: 2019-02-12
 navtitle: Home
 ---
 
-<h1 class="f2 f1-m f-subheadline-l i lh-title tracked-tight mt0 measure-narrow pt4 mb4 mb5-ns bt bw1 b--highlight">Week notes</h1>
+<h1 class="f2 f1-m f-subheadline-l fw8 lh-title tracked-tight mt0 measure-narrow pt4 mb4 mb5-ns bt bw1 b--highlight">Week notes</h1>
 
-<h2 class="f5 f4-l lh-title ttu tracked">Recently</h2>
-
-{% set postslist = collections.notes | head(-3) %}
+{% set postslist = collections.notes | head(-5) %}
 {% include "postslist.njk" %}
 
-<p class="f4 f3-ns lh-copy">Keep digging in <a class="link accent hover-secondary" href="{{ '/posts/' | url }}">the&nbsp;archive&nbsp;»</a></p>
+<p class="f5 f4-ns lh-copy">Keep digging in <a class="link text hover-accent underline" href="{{ '/posts/' | url }}">the&nbsp;archive&nbsp;»</a></p>

@@ -23,7 +23,7 @@ _Here’s a little list of the things I’ve done:_
 
 ## I deleted my Facebook account
 
-I like to think most people know why Facebook is bad, but just in case here ar five articles: [1], [2], [3], [4] and [5].
+I like to think most people know why Facebook is bad, but just in case here are five articles: [1], [2], [3], [4] and [5].
 
 ## I don’t use Instagram anymore
 

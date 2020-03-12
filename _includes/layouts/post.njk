@@ -4,10 +4,10 @@ templateClass: tmpl-post
 ---
 <article>
   <header class="bt bw1 b--highlight {{ 'mb5' if not bigTitle }}">
-    <time class="dib mv1 mb0-ns lh-title f5 f4-ns fw5 i accent" datetime="{{ date | htmlDateString }}">Week {{ date | readableWeek }}</time>
-    <time class="dib mv1 mb0-ns lh-title f5 f4-ns fw5 i accent fr" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+    <time class="dib mv1 mb0-ns lh-title f5 f4-ns fw6 accent" datetime="{{ date | htmlDateString }}">Week {{ date | readableWeek }}</time>
+    <time class="dib mv1 mb0-ns lh-title f5 f4-ns fw6 accent fr" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
     {% if bigTitle %}
-      <h1 class="f2 f1-m f-subheadline-l lh-title mt0 measure-narrow pt1 mb4 mb5-ns">{{ title | widont | safe }}</h1>
+      <h1 class="f2 f1-ns lh-title mt0 measure-narrow pt4 mb4 mb5-ns">{{ title | widont | safe }}</h1>
     {% endif %}
   </header>
 
@@ -22,6 +22,6 @@ templateClass: tmpl-post
   </div>
 </article>
 
-<p class="f4 f3-ns lh-copy mt0 pt2 mb4 mb5-ns bt bw1 b--highlight">
+<p class="f4 f3-ns lh-copy mt0 pt2 mt5 mb4 mb5-ns bt bw1 b--highlight">
   <a class="link accent hover-secondary" href="{{ '/' | url }}">← Home</a>
 </p>
