@@ -8,7 +8,7 @@ navtitle: Work
 permalink: /work/
 ---
 
-<h1 class="f2 f1-ns i lh-title mt0 measure pt4 mb4 mb5-ns bt bw1 b--highlight">Places I have worked over the years</h1>
+<h1 class="f2 f1-ns fw8 lh-title mt0 measure pt4 mb4 mb5-ns bt bw1 b--highlight">Places I have worked over the years</h1>
 
 <div reversed class="list ma0 mb6 pa0">
 {%- for job in collections.work | reverse -%}
@@ -18,8 +18,8 @@ permalink: /work/
         <img class="fl mr3 mb3 mr4-m mb4-m ma-l dib border-box w3 h3 w4-ns h4-ns br-100 bg-{{ job.data.bg }} ba bw3 bw4-ns b--{{ job.data.bg }}" src="/img/work/{{ job.data.logo }}" alt="{{ job.data.company }} logo" style="{{ job.data.tweak }}" />
       </a>
       <div>
-        <h2 class="db f3 f2-ns fw4 ma0 lh-title measure-narrow">
-          <a class="link text hover-accent" href="{{ job.data.website }}">
+        <h2 class="db f3 f2-ns fw8 ma0 lh-title measure-narrow">
+          <a class="link text hover-accent underline" href="{{ job.data.website }}">
             {{ job.data.company | widont | safe }}
           </a>
         </h2>

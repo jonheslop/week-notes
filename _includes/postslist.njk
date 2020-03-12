@@ -1,9 +1,9 @@
-<ol reversed class="list ma0 mb6 pa0">
+<ol reversed class="list ma0 mb5 pa0">
 {% for post in postslist | reverse %}
   <li class="lh-copy bt bw1 b--highlight relative{% if post.url == url %} postlist-item-active{% endif %}">
-    <a href="{{ post.url | url }}" class="db link accent hover-secondary f3 f2-l pv4 pr6-ns">
+    <a href="{{ post.url | url }}" class="db link text hover-accent f4 f3-l pv3 pr6-ns">
       {% if post.data.title %}{{ post.data.title | widont | safe }}{% else %}<code>{{ post.url }}</code>{% endif %}
-      <time class="f5 f4-ns lh-title mt2 mt3-l db dib-ns absolute-ns right-0" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      <time class="f6 f5-ns lh-title mt2 db dib-ns absolute-ns right-0" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
     </a>
   </li>
 {% endfor %}
