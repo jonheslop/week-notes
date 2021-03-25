@@ -1,3 +1,5 @@
+## Archived and superceeded by github.com/jonheslop/jfh-2021
+
 # Week notes
 
 An [Eleventy] powered static site.
